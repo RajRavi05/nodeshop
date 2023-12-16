@@ -22,8 +22,8 @@ const MONGODB_URI =
 const app = express();
 const csrfProtection = csrf();
 
-const privateKey  = fs.readFileSync('server.key');
-const certificate = fs.readFileSync('server.cert');
+// const privateKey  = fs.readFileSync('server.key');
+// const certificate = fs.readFileSync('server.cert');
 
 const fileStorage = multer.diskStorage({
   destination:(req,file,cb)=>{

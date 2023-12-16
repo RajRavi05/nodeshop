@@ -1,5 +1,6 @@
 <%- include('../includes/head.ejs') %>
     <link rel="stylesheet" href="/css/cart.css">
+    <script src="https://js.stripe.com/v3/"></script>
     </head>
 
     <body>
@@ -18,7 +19,7 @@
             </div>
             <div class="centered">
                 <button id="order-btn" class="btn">ORDER</button>
-                <script src="https://js.stripe.com/v3/"></script>
+                
                 <script>
                     var stripe = Stripe('pk_test_51OH1QPSI1iXqXW9n8ChG84LFkj0vlFEcMFnCxu0ACDwzZNX7YQXLnKlsfwgTscPv8K53h4iqoUqGVLCyt4gfgDVb00RjqdB0Fr');
                     var orderBtn = document.getElementById("order-btn");

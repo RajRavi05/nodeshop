@@ -1,6 +1,5 @@
 <%- include('../includes/head.ejs') %>
     <link rel="stylesheet" href="/css/cart.css">
-    <script src="https://js.stripe.com/v3/"></script>
     </head>
 
     <body>
@@ -22,4 +21,6 @@
                 <input type="hidden" value="<%= sessionId %>" id="seesionID">
             </div>
         </main>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="/js/buy.js"></script>
         <%- include('../includes/end.ejs') %>
